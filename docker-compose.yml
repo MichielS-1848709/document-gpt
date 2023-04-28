@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  search_engine:
+    build: .
+    env_file:
+      - .env
+    ports:
+      - "9090:9090"
