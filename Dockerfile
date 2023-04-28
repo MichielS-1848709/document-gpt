@@ -17,9 +17,9 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the Python script into the container
-COPY api.py .
-COPY search_engine.py .
-COPY database.py .
+COPY app/api.py .
+COPY app/search_engine.py .
+COPY app/database.py .
 
 # Run the script when the container is started
 CMD ["python", "api.py"]
